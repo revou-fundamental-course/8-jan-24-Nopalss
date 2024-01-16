@@ -11,6 +11,7 @@ let inform = document.getElementById("inform");
 let inform2 = document.getElementById("inform2");
 let content = document.getElementsByClassName("hasil")[0];
 let content2 = document.getElementsByClassName("hasil")[1];
+const icon = document.querySelector(".icon i");
 
 function hapus() {
   content.classList.remove("muncul");
@@ -139,3 +140,8 @@ hapus1.addEventListener("click", function () {
 hapus2.addEventListener("click", function () {
   hapus();
 });
+
+icon.addEventListener("click", function(){
+  const info = document.getElementsByClassName("info")[0];
+  info.classList.toggle("muncul");
+})

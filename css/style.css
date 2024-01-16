@@ -1,207 +1,223 @@
-*{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-family: "Poppins";
-    box-sizing: border-box;
-    text-transform: capitalize;
-    background-color: #F7FFE5;
-    color: #A0C49D;
-    outline: none;
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Poppins";
+  box-sizing: border-box;
+  text-transform: capitalize;
+  background-color: #f7ffe5;
+  color: #a0c49d;
+  outline: none;
 }
 
-
-header{
-    margin: auto;
-    width: 100%;
-    max-width: 700px;
+header {
+  margin: auto;
+  width: 100%;
+  max-width: 700px;
 }
-main{
-    margin: auto;
-    width: 100%;
-    max-width: 700px;
-    margin-top: 1.5em;
+main {
+  margin: auto;
+  width: 100%;
+  max-width: 700px;
+  margin-top: 1.5em;
 }
-.judul{
-    margin-top: 3px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
+.judul {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: relative;
 }
-.bg-1{
-    background-color: #A0C49D;
+.bg-1 {
+  background-color: #a0c49d;
 }
-.logo i{
-    padding: 10px;
-    border-radius: 50px;
-    color: #F7FFE5;
-    background-color: #C4D7B2;
+.logo i {
+  padding: 10px;
+  border-radius: 50px;
+  color: #f7ffe5;
+  background-color: #c4d7b2;
 }
-.judul h1{
-    color: #F7FFE5;
+.judul h1 {
+  color: #f7ffe5;
 }
-.judul h1 span{
-    color: #e6fece;
-    font-size: 0.5em;
-}
-
-.list{
-    margin: 15px;
-    font-weight: 600;
+.judul h1 span {
+  color: #e6fece;
+  font-size: 0.5em;
 }
 
-.btn{
-    width: 120px;
-    margin-bottom: 8px;
-    font-size: 1em;
-    transition: all 0.5s ease;
-    cursor: pointer;
+.list {
+  margin: 15px;
+  font-weight: 600;
 }
 
-
-.btn:hover{
-    text-align: center;
-    padding: 6px;
-    background-color: #A0C49D;
-    color: hsl(78, 100%, 95%);
-    border-radius: 10px;
+.btn {
+  width: 120px;
+  margin-bottom: 8px;
+  font-size: 1em;
+  transition: all 0.5s ease;
+  cursor: pointer;
 }
 
-.btn:active{
-    transform: scale(.8);
+.btn:hover {
+  text-align: center;
+  padding: 6px;
+  background-color: #a0c49d;
+  color: hsl(78, 100%, 95%);
+  border-radius: 10px;
 }
 
-.option{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.btn:active {
+  transform: scale(0.8);
 }
 
-.bg-2{
-    background-color: #C4D7B2;
-    color: #F7FFE5;
+.option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.kotak{
-    margin: auto;
-    width: 120px;
-    height: 120px;
-    border: solid 2px;
-
-}
-.rumus{
-    text-align: center;
+.bg-2 {
+  background-color: #c4d7b2;
+  color: #f7ffe5;
 }
 
-.input{
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
+.kotak {
+  margin: auto;
+  width: 120px;
+  height: 120px;
+  border: solid 2px;
 }
-.form{
-    border: none;
-    padding: 3px;
-    text-align: center;
-    border-bottom: solid 3px;
-    font-weight: 600;
+.rumus {
+  text-align: center;
 }
 
-.button{
-    margin: 15px;
-    display: flex;
-    gap: 1em;
-    align-items: center;
-    justify-content: right;
+.input {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
-.b{
-    padding: 10px;
-    border-radius: 7px;
-    border: none;
-    background-color: #A0C49D;
-    font-weight: 500;
-    color: #F7FFE5;
-    width: 100%;
-    max-width: 60px;
-    text-align: center;
-    height: 40px;
-    transition: all .50 ease;
-}
-.b:active{
-    transform: scale(.8);
+.form {
+  border: none;
+  padding: 3px;
+  text-align: center;
+  border-bottom: solid 3px;
+  font-weight: 600;
 }
 
-.hapus{
-    background-color: red;
+.button {
+  margin: 15px;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: right;
+}
+.b {
+  padding: 10px;
+  border-radius: 7px;
+  border: none;
+  background-color: #a0c49d;
+  font-weight: 500;
+  color: #f7ffe5;
+  width: 100%;
+  max-width: 60px;
+  text-align: center;
+  height: 40px;
+  transition: all 0.5 ease;
+}
+.b:active {
+  transform: scale(0.8);
 }
 
-.luas{
-    display: none;
+.hapus {
+  background-color: red;
 }
 
-.keliling{
-    display: none;
+.luas {
+  display: none;
 }
 
-
-.active{
-    text-align: center;
-    padding: 6px;
-    background-color: #A0C49D;
-    color: hsl(78, 100%, 95%);
-    border-radius: 10px;
-}
-.keterangan{
-    margin: 3px 6px;
-}
-.hasil{
-    margin: auto;
-    padding: 3px;
-    width: 100%;
-    max-width: 300px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 15px auto;
-    display: none;
-}
-.baris{
-    text-align: center;
-    border: none;
-    cursor: pointer;
-    
-}
-.eror{
-    width: 300px;
-    color: red;
-    font-weight: 600;
-}
-.green{
-    width: 300px;
-    color: #A0C49D;
-    font-weight: 600;
-    font-size: 1em;
+.keliling {
+  display: none;
 }
 
-.muncul{
-    display: block;
+.active {
+  text-align: center;
+  padding: 6px;
+  background-color: #a0c49d;
+  color: hsl(78, 100%, 95%);
+  border-radius: 10px;
+}
+.keterangan {
+  margin: 3px 6px;
+}
+.hasil {
+  margin: auto;
+  padding: 3px;
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
+  display: none;
+}
+.baris {
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+.eror {
+  width: 300px;
+  color: red;
+  font-weight: 600;
+}
+.green {
+  width: 300px;
+  color: #a0c49d;
+  font-weight: 600;
+  font-size: 1em;
 }
 
-.copy-right{
-    background-color: #A0C49D;
-    font-size: 0.3em;
-    font-style: italic;
+.copy-right {
+  background-color: #a0c49d;
+  font-size: 0.3em;
+  font-style: italic;
 }
-.copy-right p{
-    text-align: center;
-    color: #F7FFE5;
-    background-color: #A0C49D;
+.copy-right p {
+  text-align: center;
+  color: #f7ffe5;
+  background-color: #a0c49d;
+}
+.copy-right p span {
+  font-size: 1.5em;
+  background-color: #a0c49d;
+}
 
+.icon {
+  position: absolute;
+  right: 9px;
+  bottom: 0px;
+  background-color: #a0c49d;
 }
-.copy-right p span{
-    font-size: 1.5em;
-    background-color: #A0C49D;
+.icon i {
+  font-size: 2em;
+  background-color: #a0c49d;
+  color: #f7ffe5;
+  transition: all 0.5s ease;
+}
+.info {
+  margin-top: 15px;
+  display: none;
+}
+.muncul {
+  display: block;
+}
+footer{
+  top: 150vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
