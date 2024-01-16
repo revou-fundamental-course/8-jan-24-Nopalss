@@ -1,11 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Katik</title>
-</head>
-<body>
-    
-</body>
+    <!-- link to css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link to box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="judul bg-1">
+        <h1 class="logo bg-1">
+          <i class="bx bx-math" undefined></i> Katik
+          <span class="bg-1 desktop">"Kalkulator Matematik"</span>
+        </h1>
+      </div>
+    </header>
+    <!-- content -->
+    <main>
+      <div class="option">
+        <ul class="list">
+          <!-- <li class="btn" id="btnP">
+            * Persegi
+          </li>
+          <li class="btn" id="btnPp">
+            * P. panjang
+          </li> -->
+        </ul>
+      </div>
+      <!-- PERSEGI -->
+      <div class="persegi">
+        <h3 class="judul bg-2">Persegi</h3>
+        <div class="intro">
+          <ul class="list">
+            <li class="btn" id="btnPk">#Keliling</li>
+            <li class="btn" id="btnPl">#Luas</li>
+          </ul>
+        </div>
+        <!-- keliling -->
+        <div class="keliling" id="kelilingP">
+          <div class="judul"><h3>keliling</h3></div>
+          <div class="content">
+            <div class="kotak"></div>
+            <div class="rumus">
+              <h4>Rumus :</h4>
+              <h4>K = 4 * S</h4>
+            </div>
+            <div class="keterangan">
+              <h4>keterangan :</h4>
+              <ul>
+                <li>K = Keliling</li>
+                <li>S = Sisi</li>
+              </ul>
+            </div>
+            
+            <div class="input">
+              <input
+                type="text"
+                id="sisi1"
+                class="form"
+                placeholder="Masukkan Angka"
+              />
+            </div>
+            <!-- Hasil -->
+            <div class="hasil">
+              <input type="text" class="baris" id="inform2" readonly>
+              <input type="text" class="baris green" readonly>
+              <input type="text" class="baris green" readonly>
+              <input type="text" class="baris green" readonly>
+              <textarea name="" class="baris green" cols="30" rows="10" style="height: 52px;width: 277;" readonly></textarea>              
+            </div>
+            <div class="button">
+              <button type="reset" class="b hapus" id="hapus1">hapus</button>
+              <button type="submit" class="b -input" id="hitung1">
+                Hitung
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- luas -->
+        <div class="luas" id="luasP">
+          <div class="judul"><h3>luas</h3></div>
+          <div class="content">
+            <div class="kotak"></div>
+            <div class="rumus">
+              <h4>Rumus :</h4>
+              <h4>L = s * S</h4>
+            </div>
+            <div class="keterangan">
+              <h4>keterangan :</h4>
+              <ul>
+                <li>L = Luas</li>
+                <li>S = Sisi</li>
+              </ul>
+            </div>
+            <div class="input">
+              <input
+                type="text"
+                id="sisi2"
+                class="form"
+                placeholder="Masukkan Angka"
+                
+              />
+            </div>
+            <div class="hasil">
+              <input type="text" class="baris inform" id="inform">
+              <input type="text" class="baris green" readonly>
+              <input type="text" class="baris green" readonly>
+              <input type="text" class="baris inform" readonly>
+              <textarea name="" class="baris green" cols="30" rows="10" style="height: 52px;width: 277;" readonly></textarea>              
+            </div>
+            <div class="button">
+              <button type="reset" class="b hapus" id="hapus2">hapus</button>
+              <button type="submit" class="b -input" id="hitung2">
+                Hitung
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="content-footer">
+        <div class="judul bg-1">
+          <h1 class="logo bg-1">
+            <i class="bx bx-math" undefined></i> Katik
+            <span class="bg-1 desktop">"Kalkulator Matematik"</span>
+          </h1>
+        </div>
+      </div>
+    </footer>
+    <!-- link to js -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
