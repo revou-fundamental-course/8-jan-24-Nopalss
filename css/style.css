@@ -190,4 +190,18 @@ main{
     display: block;
 }
 
+.copy-right{
+    background-color: #A0C49D;
+    font-size: 0.3em;
+    font-style: italic;
+}
+.copy-right p{
+    text-align: center;
+    color: #F7FFE5;
+    background-color: #A0C49D;
 
+}
+.copy-right p span{
+    font-size: 1.5em;
+    background-color: #A0C49D;
+}

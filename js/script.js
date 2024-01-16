@@ -54,6 +54,7 @@ hitung1.addEventListener("click", function () {
   let sisi1 = Number(document.getElementById("sisi1").value);
   const k = keliling(sisi1);
   if (k === 0) {
+    inform2.classList.remove("green");
     const p = (document.getElementsByClassName("baris")[0].value =
     "Maaf jangan dikosongkan");
     const p2 = (document.getElementsByClassName("baris")[1].value = "");
@@ -63,28 +64,29 @@ hitung1.addEventListener("click", function () {
     inform2.classList.add("eror");
   } else if (isNaN(k) === true) {
     const p = (document.getElementsByClassName("baris")[0].value =
-      "Maaf jangan diisi dengan karakter");
+      "Maaf yang anda masukkan bukan angka");
     const p2 = (document.getElementsByClassName("baris")[1].value = "");
     const p3 = (document.getElementsByClassName("baris")[2].value = "");
     const p4 = (document.getElementsByClassName("baris")[3].value = "");
     const p5 = (document.getElementsByClassName("baris")[4].value = "");
     inform2.classList.add("eror");
+    inform2.classList.remove("green");
   } else {
     inform2.classList.add("green");
     const p = (document.getElementsByClassName("baris")[0].value =
       "Hasi Perhitungan : ");
-    const p2 = (document.getElementsByClassName("baris")[1].value =
+      const p2 = (document.getElementsByClassName("baris")[1].value =
       "K = 4 * S ");
     const p3 = (document.getElementsByClassName("baris")[2].value =
       "K = 4 * " + sisi1);
     const p4 = (document.getElementsByClassName("baris")[3].value =
-      " K = " + k);
+    " K = " + k);
     const p5 = (document.getElementsByClassName("baris")[4].value =
       "Jadi jika sisi sebesar " +
       sisi1 +
       ", maka didapatkan keliling sebesar " +
       k);
-  }
+    }
 });
 
 function luass(s) {
@@ -97,16 +99,18 @@ hitung2.addEventListener("click", function () {
   const l = luass(sisi2);
   if (l === 0) {
     const p6 = (document.getElementsByClassName("baris ")[5].value =
-      "Maaf jangan dikosongkan");
+    "Maaf jangan dikosongkan");
     const p7 = (document.getElementsByClassName("baris")[6].value = "");
     const p8 = (document.getElementsByClassName("baris")[7].value = "");
     const p9 = (document.getElementsByClassName("baris")[8].value = "");
     const p10 = (document.getElementsByClassName("baris")[9].value = "");
+    inform.classList.remove("green");
     inform.classList.add("eror");
   } else if (isNaN(l) === true) {
+    inform.classList.remove("green");
     inform.classList.add("eror");
     const p6 = (document.getElementsByClassName("baris")[5].value =
-      "Maaf Yang Anda Masukan Bukan Angka");
+    "Maaf Yang Anda Masukan Bukan Angka");
     const p7 = (document.getElementsByClassName("baris")[6].value = "");
     const p8 = (document.getElementsByClassName("baris")[7].value = "");
     const p9 = (document.getElementsByClassName("baris")[8].value = "");
@@ -114,12 +118,12 @@ hitung2.addEventListener("click", function () {
   } else {
     inform.classList.add("green");
     const p6 = (document.getElementsByClassName("baris")[5].value =
-      "Hasi Perhitungan : ");
+    "Hasi Perhitungan : ");
     const p7 = (document.getElementsByClassName("baris")[6].value =
-      "l = s * S ");
+    "l = s * S ");
     const p8 = (document.getElementsByClassName("baris")[7].value =
       "l = " + sisi2 + " * " + sisi2);
-    const p9 = (document.getElementsByClassName("baris")[8].value = "l = " + l);
+      const p9 = (document.getElementsByClassName("baris")[8].value = "l = " + l);
     const p10 = (document.getElementsByClassName("baris")[9].value =
       "Jadi jika sisi sebesar " +
       sisi2 +
